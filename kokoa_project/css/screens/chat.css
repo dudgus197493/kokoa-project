@@ -1,0 +1,125 @@
+#chat-screen {
+    background-color: #ABC1D1;
+    height:10000hv
+}
+#chat-screen .status-bar {
+    z-index: 2;
+}
+#chat-screen .alt-header {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ABC1D1;
+    z-index: 1;
+}
+.main-chat {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__timestamp {
+    color: white;
+    background-color: #92A4B2;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.massage-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.massage-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.massage__author{
+    opacity: 0.8;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 8px;
+}
+.massage__info {
+    display: flex;
+    align-items: flex-end;
+}
+.massage__bubble {
+    background-color: white;
+    padding:10px 15px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+.massage__time{
+    opacity: 0.8;
+}
+.massage-row--own {
+    justify-content: flex-end;
+}
+.massage-row--own .massage__bubble {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    background-color: var(--yellow);
+    margin-right: 0px;
+    margin-left: 5px;
+}
+.massage-row--own .massage__info {
+    flex-direction: row-reverse;
+}
+.reply {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 5px 25px;
+    box-sizing: border-box;
+}
+.reply .reply__column:first-child {
+    width: 10%;
+}
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+.reply i {
+    opacity: 0.6;
+}
+.reply__column input {
+    padding:10px;
+    width: 100%;
+    border-radius: 20px;
+    border: var(--main-border);
+}
+.reply__column:last-child >i,
+.reply__column:last-child button {
+    position:absolute;
+    right: -17px;
+    top: 4px;
+}
+.reply__column:last-child > i {
+    right: 20px;
+    top:12.5px
+}
+.reply__column button {
+    background-color: var(--yellow);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.reply__column button i {
+    opacity: 1;
+}
+.reply__column button:focus,
+reply__column button:active {
+    outline: none;
+}
+
+
